@@ -20,6 +20,132 @@
   widows: 100%
   text-align: center;
 }
+/* .btn8{
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #7bda7838;
+ 
+  /* #background: linear-gradient(45deg, #ff0000, #ff7300, fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); */
+/* background-image: -webkit-linear-gradient(top, #5282d4, #28667d);
+background-image: -moz-linear-gradient(top, #5282d4, #28667d);
+background-image: -ms-linear-gradient(top, #5282d4, #28667d);
+background-image: -o-linear-gradient(top, #5282d4, #28667d);
+background-image: linear-gradient(to bottom, #5282d4, #28667d);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 60px;
+  margin-top: -10%;
+  top: -140px;
+   left: 580px; 
+  
+} 
+.btn8:before {
+  content: ''; */
+  /* background: linear-gradient(45deg, #3f0505, #4e2604, #353403, #123504, #06362e, #020d42, #210341, #300827, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .4s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0 9px blueviolet;
+  color: #000;
+}
+.btn8:active {
+  color: rgb(16, 7, 94);
+  box-shadow: 0 4px rgb(6, 85, 39);
+} 
+.btn8:hover:before {
+  opacity: 1;
+  box-shadow: 0 4px black;
+} */ 
+.btn8 {
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #5282d4;
+background-image: -webkit-linear-gradient(top, #5282d4, #28667d);
+background-image: -moz-linear-gradient(top, #5282d4, #28667d);
+background-image: -ms-linear-gradient(top, #5282d4, #28667d);
+background-image: -o-linear-gradient(top, #5282d4, #28667d);
+background-image: linear-gradient(to bottom, #5282d4, #28667d);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  top: -150px;
+  left: 580px;
+}
+#jindl
+{
+  padding-left: 15px;
+}
+.btn8:before {
+  content: '';
+  background: linear-gradient(45deg, #b95c5c, #c2783c, #777658, #bbcab5, #a8c9c3, #002bff, #7a00ff, #3d323b, #682222);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .4s ease-in-out;
+  border-radius: 10px;
+  box-shadow: 0 9px blueviolet;
+}
+
+.btn8:active {
+  color: #000;
+  box-shadow: 0 4px black;
+}
+
+.btn8:active:after {
+  background: transparent;
+  animation: glowing 50s linear infinite;
+  transition: opacity .4s ease-in-out;
+  box-shadow: 0 4px black;
+}
+
+.btn8:hover:before {
+  opacity: 1;
+  box-shadow: 0 4px black;
+}
+
+.btn8:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #5282d4;
+background-image: -webkit-linear-gradient(top, #5282d4, #28667d);
+background-image: -moz-linear-gradient(top, #5282d4, #28667d);
+background-image: -ms-linear-gradient(top, #5282d4, #28667d);
+background-image: -o-linear-gradient(top, #5282d4, #28667d);
+background-image: linear-gradient(to bottom, #5282d4, #28667d);
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  /* box-shadow: 0 4px black; */
+
+}
+
 #yash{
   width: 200px;
     height: 50px;
@@ -36,7 +162,10 @@
     position: relative;
     z-index: 0;
     border-radius: 20px;
-    margin-top: 2rem;   
+    margin-top: 2rem;  
+    right: 20px;
+    bottom: 5px;
+    
 }
 #yash1{
   width: 200px;
@@ -55,7 +184,9 @@
     z-index: 0;
     border-radius: 20px;
     margin-top: 2rem;  
-    margin-bottom: 1.45rem; 
+     margin-bottom: 1.00rem;  
+     right: 20px;
+     bottom: 5px;
 }
 :root {
   --blue: #007bff;
