@@ -6,6 +6,16 @@
   /* margin : 0; */
   
 }
+
+.new2{
+   padding-bottom:0;
+   margin-bottom:0;
+  width:100%;
+  height:100%;
+  background-repeat: no-repeat;
+}
+
+
 .banner img
 {
   width: 100%;
@@ -145,7 +155,6 @@ background-image: linear-gradient(to bottom, #5282d4, #28667d);
   /* box-shadow: 0 4px black; */
 
 }
-
 #yash{
   width: 200px;
     height: 50px;
@@ -179,7 +188,7 @@ background-image: linear-gradient(to bottom, #5282d4, #28667d);
   background-image: -ms-linear-gradient(top, #5282d4, #28667d);
   background-image: -o-linear-gradient(top, #5282d4, #28667d);
   background-image: linear-gradient(to bottom, #5282d4, #28667d);
-    cursor: ;
+    /* cursor: ; */
     position: relative;
     z-index: 0;
     border-radius: 20px;
@@ -187,6 +196,19 @@ background-image: linear-gradient(to bottom, #5282d4, #28667d);
      margin-bottom: 1.00rem;  
      right: 20px;
      bottom: 5px;
+}
+.dropdown-menu a:hover{
+  background-color: #000000;
+}
+.Kholi
+{
+  padding-top: 20px;
+}
+#mybtn1
+{
+  height: 45px;
+  width: 45px;
+  border-radius: 10px;
 }
 :root {
   --blue: #007bff;
