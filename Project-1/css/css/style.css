@@ -6,6 +6,16 @@
   /* margin : 0; */
   
 }
+
+.new2{
+   padding-bottom:0;
+   margin-bottom:0;
+  width:100%;
+  height:100%;
+  background-repeat: no-repeat;
+}
+
+
 .banner img
 {
   width: 100%;
@@ -192,7 +202,10 @@ background-image: linear-gradient(to bottom, #5282d4, #28667d);
 }
 .Kholi
 {
-  padding-top: 20px;
+  padding-top: 10px;
+  letter-spacing: 5.5px;
+  font-weight: 800;
+  text-shadow: 1px 1px #FF0000;
 }
 #mybtn1
 {
