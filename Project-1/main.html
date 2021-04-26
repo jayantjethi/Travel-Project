@@ -1,20 +1,12 @@
-<!-- /* <!DOCTYPE html>
-<html>
-    <body>
-        <head>
-            <title>my world</title>
-        </head>
-        <h1>hello</h1>        
-    </body>
-
-</body>*/ -->
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<title>Travel Page</title>
-    <meta charset="utf-8"> 
-
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta charset="utf-8">  -->
+    <!-- <base href="/"> -->
 	<!-- <link rel="icon" href="./images/ieee.png" type="image"> -->
 	<!-- <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet"> -->
 
@@ -32,16 +24,17 @@
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css"> -->
     <link rel="icon" href="https://cdn.imgbin.com/13/12/21/imgbin-expedia-logo-travel-agent-travel-website-car-rental-travel-agency-yellow-airplane-icon-0NwWNk16hT0ABeKNnvbiM57nM.jpg" type="logo/jpg">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css">
-    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-    <link rel="stylesheet" href="index.js">
-	<link href='./lib/main.css' rel='stylesheet' />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Quicksand'>
+    <!-- <link href="index.js">
+	<link href='./lib/main.css'> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"> -->
 	<!-- <script src='./lib/main.js'></script> -->
-
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+    
 </head>
 <body>
 	<!-- <div class="jumbotron"> -->
@@ -205,6 +198,10 @@
     </div>
     </div>
 </div>
+<div id='map'></div>
+<!-- <section>
+    <iframe style="width:100%"; width="560" height="380" src="https://coronavirus.app/map?embed=true" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</section> -->
 <footer class="ftco-footer ftco-section">
     <div class="container">
         <div class="row mb-5">
@@ -275,8 +272,20 @@
             </div>
           </div>
 </footer>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 <!-- <img src="C:\Users\JAYANT JETHI\OneDrive\Desktop\Submission\Images\Designing Studio poster – 1.png"> -->
 </body>
-</html></html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+
+<script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiamF5YW50LWpldGhpNyIsImEiOiJja255YjFzMzkwaXA0MzJvMzd1dGNzb2RoIn0.f5nCpWr6gVtQ594tmM6euw';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/dark-v10',
+zoom : 3,
+center : [90,22],
+});
+</script>
+<script src="index.js"></script>
+</html>
