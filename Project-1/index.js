@@ -22,9 +22,12 @@ function updateMap() {
           color : color
         })
           .setLngLat([longitude, latitude])
+          .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
+          .setHTML('<h3>' + element.name + '</h3><p>'))
           .addTo(map);
       });
     })
 }
-let interval = 1000;
-setInterval(updateMap , interval);
+updateMap();
+// let interval = 1000;
+// setInterval(updateMap , interval);
