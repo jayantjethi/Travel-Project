@@ -6,6 +6,16 @@
   /* margin : 0; */
   
 }
+
+.thumbnail
+{
+  padding: 0;
+border: 0;
+}
+#picsm.container
+{
+  padding-right: 0;
+}
 #map
 {
   width: 90%;
@@ -20,7 +30,9 @@
   height:100%;
   background-repeat: no-repeat;
 }
-
+#manalisites{
+  color: #ba8b00;
+}
 
 .banner img
 {
