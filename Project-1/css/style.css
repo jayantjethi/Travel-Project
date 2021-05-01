@@ -6,7 +6,16 @@
   /* margin : 0; */
   
 }
-
+#list
+{
+  position: relative;
+  left: 1210px;
+  top: -27px;
+  width: 234px;
+  /* text-transform: lowercase; */
+  /* border-left: 25px;
+  padding-left: 25px; */
+}
 .thumbnail
 {
   padding: 0;
