@@ -35,7 +35,20 @@
   <!-- <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"> -->
 <!-- <script src='./lib/main.js'></script> -->
 <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function()
+    {
 
+      $(".dropdown ul").click(function()
+    {
+      alert($(this).text());
+    })
+    });
+  </script>
 </head>
 
 <body>
@@ -102,12 +115,19 @@
       </div>
     </nav>
   </div>
-  <ul class="list-group" id="list"></ul>
 
   <!-- </div> -->
   <section id="picms">
     <div class="container">
       <div class="row">
+        <div class="dropdown">
+          <div class="dropdown-content">
+            <ul class="list-group" id="list">
+              <!-- <li>manali</li>
+              <li>shimla</li> -->
+            </ul>
+          </div>
+        </div>
         <div class="col-lg-4">
           <div class="thumbnail">
             <!-- <div class="col-lg-2"> -->

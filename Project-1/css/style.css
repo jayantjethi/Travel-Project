@@ -9,7 +9,7 @@
 #list
 {
   position: relative;
-  left: 1210px;
+  left: 1022px;
   top: -27px;
   width: 234px;
   /* text-transform: lowercase; */
@@ -20,6 +20,16 @@
 {
   padding: 0;
 border: 0;
+}
+.dropdown-content
+{
+  color: black;
+  /* box-shadow: 15px 8px 32px 0px rgba(0,0,0,0.2); */
+
+}
+.dropdown-content li:hover {
+  background-color: blanchedalmond;
+  cursor: default;
 }
 #picsm.container
 {

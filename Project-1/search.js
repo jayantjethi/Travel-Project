@@ -2,7 +2,7 @@ const places = [
   
  {name : 'manali'},
  {name : 'shimla'},
- {name : 'mount Abu'},
+ {name : 'Mount Abu'},
  {name : 'Gangtok'},
  {name : 'Nanital'}
  
@@ -69,7 +69,7 @@ searchInput.addEventListener('input',(event) =>
     let value = event.target.value;
     if(value && value.trim().length > 0)
     {
-        value.trim().toLowerCase();
+        value.toLowerCase();
         setList(places.filter(place => 
             {
                 return place.name.includes(value);
