@@ -22,19 +22,33 @@
 
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css"> -->
-  <link rel="icon"
-    href="https://cdn.imgbin.com/13/12/21/imgbin-expedia-logo-travel-agent-travel-website-car-rental-travel-agency-yellow-airplane-icon-0NwWNk16hT0ABeKNnvbiM57nM.jpg"
-    type="logo/jpg">
+  <link rel="icon" href="https://cdn.imgbin.com/13/12/21/imgbin-expedia-logo-travel-agent-travel-website-car-rental-travel-agency-yellow-airplane-icon-0NwWNk16hT0ABeKNnvbiM57nM.jpg" type="logo/jpg">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/style.css">
-  <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet'>
-  <link rel="stylesheet" href="index.js">
-  <link href='./lib/main.css' rel='stylesheet' />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
-  <!-- <script src='./lib/main.js'></script> -->
+  <link href='https://fonts.googleapis.com/css?family=Quicksand'>
+  <!-- <link href="index.js">
+<link href='./lib/main.css'> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"> -->
+<!-- <script src='./lib/main.js'></script> -->
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script>
+    $(document).ready(function()
+    {
 
+      $(".dropdown ul").click(function()
+    {
+      alert($(this).text());
+    })
+    });
+  </script>
 </head>
 
 <body>
@@ -92,7 +106,8 @@
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+          <input id="searchfunc" autocomplete = "off" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search /">
           <button id="mybtn1" class="btn btn-outline-light my-2 my-sm-0" type="submit">
             <i class="fa fa-search" aria-hidden="true"></i>
           </button>
@@ -100,10 +115,19 @@
       </div>
     </nav>
   </div>
+
   <!-- </div> -->
   <section id="picms">
     <div class="container">
       <div class="row">
+        <div class="dropdown">
+          <div class="dropdown-content">
+            <ul class="list-group" id="list">
+              <!-- <li>manali</li>
+              <li>shimla</li> -->
+            </ul>
+          </div>
+        </div>
         <div class="col-lg-4">
           <div class="thumbnail">
             <!-- <div class="col-lg-2"> -->
@@ -211,9 +235,8 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="search.js"></script>
   <!-- <img src="C:\Users\JAYANT JETHI\OneDrive\Desktop\Submission\Images\Designing Studio poster – 1.png"> -->
 </body>
-
-</html>
 
 </html>
