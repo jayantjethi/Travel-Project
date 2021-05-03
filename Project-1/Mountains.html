@@ -22,6 +22,22 @@
 
 	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css"> -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <link rel="icon" href="https://cdn.imgbin.com/13/12/21/imgbin-expedia-logo-travel-agent-travel-website-car-rental-travel-agency-yellow-airplane-icon-0NwWNk16hT0ABeKNnvbiM57nM.jpg" type="logo/jpg">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Quicksand'>
+  <!-- <link href="index.js">
+<link href='./lib/main.css'> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css"> -->
+<!-- <script src='./lib/main.js'></script> -->
+<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+
   <link rel="icon"
     href="https://cdn.imgbin.com/13/12/21/imgbin-expedia-logo-travel-agent-travel-website-car-rental-travel-agency-yellow-airplane-icon-0NwWNk16hT0ABeKNnvbiM57nM.jpg"
     type="logo/jpg">
@@ -33,7 +49,12 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
-  <!-- <script src='./lib/main.js'></script> -->
+    <link rel="stylesheet" type="text/css" href="assets/css/todos.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,500' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css">
+  <script type="text/javascript" src="assets/js/lib/jquery-2.1.4.min.js"></script>
+  <!--  <script type="text/javascript" src="assets/js/todos.js"></script> -->
+  <!-- <script src='./lib/main.js'></script>-->
 
 </head>
 
@@ -100,22 +121,65 @@
       </div>
     </nav>
   </div>
+
+  <!--Weather API-->
+ <div class="input weather">
+    <input type="text" class="inputValue" placeholder="Enter a City">
+    <input type="submit" name="Submit" class="button">
+  </div>
+
+  <div class="display">
+    <h1 class="name"></h1>
+    <p class="desc"></p>
+    <p class="temp"></p>
+  </div>
+
+
+
+
+
+
+
+
+
   <!-- </div> -->
   <section id="picms">
-    <div class="container">
+    <div class="container" style="padding: 0; margin: 0; margin-right: 0 width:100%">
       <div class="row">
-        <div class="col-lg-4">
+        <div class="col-lg-7">
           <div class="thumbnail">
             <!-- <div class="col-lg-2"> -->
               <div class="row">
-                <div class="col-lg-6">
+                <div  style="margin-right: 150px;" class="col-lg-4">
                   <div class="thumbnail">
-                    <img src=".\Images\manali-holiday.jpg">
+                    <div class="flip-box">
+                      <div class="flip-box-inner">
+                         <div style="width: 100%;" class="flip-box-front">
+       <img style ="height: 300px; width:100%;"src=".\Images\manali-holiday.jpg">
+                         </div>
+                       <div class="flip-box-back">
+                      <h2>Paris</h2>
+                     <p>What an amazing city</p>
                   </div>
                 </div>
-                <div class="col-lg-6">
+              </div>
+                   
+                  </div>
+                </div>
+                <div class="col-lg-4">
                   <div class="thumbnail">
-                    <img src=".\Images\Solang-Valley-Manali.jpg">
+                     <div class="flip-box">
+                      <div class="flip-box-inner">
+                         <div style="width: 100%;" class="flip-box-front">
+        <img style ="height: 300px; width: 100%;" src=".\Images\Solang-Valley-Manali.jpg">
+                         </div>
+                       <div class="flip-box-back">
+                      <h2>Paris</h2>
+                     <p>What an amazing city</p>
+                  </div>
+                </div>
+              </div>
+                   
                   </div>
                 </div>
               </div>
@@ -125,9 +189,32 @@
           </div>
         </div>
 
-        <div class="col-lg-4">
-          <p cla="manalisites">Nearby Sites</p>
-        </div>
+       <!-- <div class="col-lg-1">
+          <p class="manalisites" style="margin-left:100px;">Nearby Sites</p>
+          </div> -->
+  <!-- <ul id="list">
+    <li id="listnum"><span id="pan"><i class="fa fa-trash"></i></span > Go To Potions Class</li>
+    <li id="listnum"><span id="pan"><i class="fa fa-trash"></i></span > Buy New Robes</li>
+    <li id="listnum
+    "><span id="pan"><i class="fa fa-trash"></i></span> Visit Hagrid</li>
+  </ul>
+</div> -->
+<div class="col-lg-4">
+<div class="todolist" style="margin-left:100px;">
+  <div id="container">
+  <h1>To-Do List <i class="fa fa-plus"></i></h1>
+  <input type="text" class="inputtodo" placeholder="Add New Todo">
+
+  <ul class="myul">
+    <li><span><i class="fa fa-trash"></i></span> Go To Potions Class</li>
+    <li><span><i class="fa fa-trash"></i></span> Buy New Robes</li>
+    <li><span><i class="fa fa-trash"></i></span> Visit Hagrid</li>
+  </ul>
+</div>
+
+</div>
+  </div>
+        
       </div>
     </div>
   </section>
@@ -211,6 +298,37 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script  src="weather.js"></script>
+  <script>
+  // when you click on an item, it gets crossed
+$(".myul").on("click", "li", function(){
+  $(this).toggleClass("completed");
+});
+
+// when you click on dustbin, item gets removed from the todo list
+$(".myul").on("click", "span",function(event){
+   $(this).parent().fadeOut(500,function(){
+      $(this).remove();
+   });
+
+});
+
+// For entering a new item in to-do list
+$("input[type='text']").keypress(function(event){
+    if(event.which === 13)
+    {
+      var todo = $(this).val();
+      $(this).val("");
+      $(".myul").append("<li><span>x </span>" + todo + "</li>");
+    }
+});
+
+// when you click on + sign, input box slides
+$(".bi-plus").click(function(){
+   $(".inputbox").slideToggle();
+})
+</script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <!-- <img src="C:\Users\JAYANT JETHI\OneDrive\Desktop\Submission\Images\Designing Studio poster – 1.png"> -->
 </body>
 
