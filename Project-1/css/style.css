@@ -6,9 +6,25 @@
   /* margin : 0; */
   
 }
-<<<<<<< HEAD
+#list
+{
+  position: relative;
+  left: 1226px;
+  top: -27px;
+  width: 234px;
 
-
+}
+ /* .dropdown
+{
+  margin-left: -210px;
+}  */
+.dropdown-content
+{
+  position: relative;
+  left: 1210px;
+  top: -27px;
+  width: 234px;
+} */
 .weather{
   margin:0;
   padding:0;
@@ -100,6 +116,7 @@
   left: 1022px;
   top: -27px;
   width: 234px;
+  /* display: none; */
   /* text-transform: lowercase; */
   /* border-left: 25px;
   padding-left: 25px; */
