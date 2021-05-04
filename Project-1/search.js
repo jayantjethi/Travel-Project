@@ -62,14 +62,15 @@ function getRelevancy(value  , searchTerm)
     }
 }
 
-const searchInput = document.getElementById('searchfunc');
+var searchInput = document.getElementById('searchfunc');
 
 searchInput.addEventListener('input',(event) =>
 { 
     let value = event.target.value;
+    value.trim().toLowerCase();
+
     if(value && value.trim().length > 0)
     {
-        value.toLowerCase();
         setList(places.filter(place => 
             {
                 return place.name.includes(value);
@@ -82,4 +83,10 @@ searchInput.addEventListener('input',(event) =>
     {
         clearList();
     }    
+})
+
+var jsdf = document.getElementById('list');
+jsdf.addEventListener('click' , function()
+{
+    c
 })
