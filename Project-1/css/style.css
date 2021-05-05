@@ -200,6 +200,12 @@ border: 0;
   widows: 100%
   text-align: center;
 }
+#covidmap{
+  font-size: 30px;
+  text-align: center;
+  color: maroon;
+  
+}
 /* .btn8{
   width: 150px;
   height: 50px;
@@ -210,7 +216,7 @@ border: 0;
  
   /* #background: linear-gradient(45deg, #ff0000, #ff7300, fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); */
 /* background-image: -webkit-linear-gradient(top, #5282d4, #28667d);
-background-image: -moz-linear-gradient(top, #5282d4, #28667d);
+background-image: -moz-linear-grahdfhjgient(top, #5282d4, #28667d);
 background-image: -ms-linear-gradient(top, #5282d4, #28667d);
 background-image: -o-linear-gradient(top, #5282d4, #28667d);
 background-image: linear-gradient(to bottom, #5282d4, #28667d);
