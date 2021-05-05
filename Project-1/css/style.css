@@ -45,11 +45,19 @@ pointer-events: auto;
 }
 #list
 {
+<<<<<<< Updated upstream
   position: relative;
   left: 16px;
   top: 1px;
   width: 234px;
   
+=======
+  /*position: relative;*/
+ /* left: 878px;
+  top: 15.5px;
+  width: 234px;*/
+
+>>>>>>> Stashed changes
 }
  /* .dropdown
 {
@@ -57,10 +65,14 @@ pointer-events: auto;
 }  */
 .dropdown-content
 {
-  position: relative;
-  left: 1210px;
+  /*position: relative;*/
+ /* left: 1210px;
   top: -27px;
+<<<<<<< Updated upstream
   width: 234px;
+=======
+  width: 234px;*/
+>>>>>>> Stashed changes
 } 
 .weather{
   margin:0;
@@ -146,7 +158,7 @@ pointer-events: auto;
 /* Style the back side */
 .flip-box-back {
   background-color: dodgerblue;
-  color: white;
+  color: blue;
   transform: rotateY(180deg);
 
   position: relative;
