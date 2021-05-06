@@ -17,6 +17,7 @@
   input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: searchfield-cancel-button;
   } */
+  
 .wrapper
 {
   max-width: 450px;
@@ -206,12 +207,31 @@ border: 0;
   color: maroon;
   
 }
+.inputweather .button{
+  width: 70px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: rgb(122, 32, 32);
+  background: #5282d4;
+background-image: -webkit-linear-gradient(top, #5282d4, #28667d);
+background-image: -moz-linear-gradient(top, #5282d4, #28667d);
+background-image: -ms-linear-gradient(top, #5282d4, #28667d);
+background-image: -o-linear-gradient(top, #5282d4, #28667d);
+background-image: linear-gradient(to bottom, #5282d4, #28667d);
+  cursor: pointer;
+  position: absolute;
+  z-index: 0;
+  border-radius: 10px;
+  top: -20px;
+  left:-30px;
+}
 /* .btn8{
   width: 150px;
   height: 50px;
   border: none;
   outline: none;
-  color: rgb(255, 255, 255);
+  color: rg(255, 255, 255);
   background: #7bda7838;
  
   /* #background: linear-gradient(45deg, #ff0000, #ff7300, fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); */
