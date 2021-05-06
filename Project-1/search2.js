@@ -1,7 +1,8 @@
 const searchWrapper = document.querySelector(".search-input");
 const inputBox = searchWrapper.querySelector("input");
 const suggBox = document.querySelector(".autocom-box");
-
+// const value8 = document.getElementById("searchfunc").value;
+// console.log(value8);
 inputBox.onkeyup = (e) =>{
     // console.log(e.target.value);
     let userData = e.target.value;
@@ -17,7 +18,7 @@ emptyArray = emptyArray.map((data) =>
 {
    return data = '<li>' + data + '<li>';
 });
-    console.log(emptyArray);
+    // console.log(emptyArray);
    searchWrapper.classList.add("active");
    showSuggestions(emptyArray);
    let allList =suggBox.querySelectorAll("li");

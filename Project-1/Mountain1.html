@@ -34,7 +34,7 @@
 <body>
 
 	<div class="conatiner">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="margin-bottom: 0;">
       <a class="navbar-brand" href="#" style="color : whitesmoke">Travel <i class="fa fa-plane"
           aria-hidden="true"></i></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -45,7 +45,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#" style="color: whitesmoke">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href=".\LandingPage.html" style="color: whitesmoke">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href=".\wishlist.html" style="color: whitesmoke;">Wishlist</a>
@@ -96,7 +96,7 @@
           <div class="search-input">
           <input type = "search"  id="searchfunc" autocomplete="off" class="form-control mr-sm-2"  placeholder="Search"
             aria-label="Search" />
-          <button id="mybtn1" class="btn btn-outline-light my-2 my-sm-0" type="submit">
+          <button  id="mybtn1" class="btn btn-outline-light my-2 my-sm-0" type="submit">
             <i class="fa fa-search" aria-hidden="true"></i>
           </button>
           <div class="autocom-box">
@@ -119,12 +119,20 @@
    <section id="picms">
 <!--    	<div class="container">
  -->       <div class="input weather" >
+  <div id = " imageposi" >
+    <img src=".\Images\WeatherImage.jpg" width="100%" height="300px">
+  </div>
        	 <div class="row">
+          <!-- <div class="banner"> -->
+
+
        	 	<div class="col-sm-6">
             <input type="text" class="inputValue" placeholder="Enter a City " >
             <br><br>
             <input type="submit" name="Submit" class="button"  >
           </div>
+        <!-- </div> -->
+
        <div class="col-sm-6">
           <div class="display">
             <h1 class="name"></h1>
@@ -134,13 +142,13 @@
            </div>
       </div>
      </div>
- 
+     <!-- </div> -->
   <!--	PHOTOS-->
   <div class="Kholi">
         <h1 style="text-align:center;font-weight: bold;font-size : 30px;font-family: 'Quicksand';"><marquee behavior="alternate" direction="left" scrollamount = "12">MANALI</marquee></h1>
        
     </div>
-   <div class="row">
+   <div class="row" id="Manali">
                 <div  class="col-lg-4 col-sm-12" style="margin-top:100px">
                   <!-- <div class="thumbnail"> -->
                    <!--  <div class="flip-box">
@@ -458,7 +466,7 @@
         <h1 style="text-align:center;font-weight: bold;font-size : 30px;font-family: 'Quicksand';"><marquee behavior="alternate" direction="left" scrollamount = "12">MOUNT-ABU</marquee></h1>
        
     </div>
-   <div class="row">
+   <div class="row" id="Mount-Abu">
                 <div  class="col-lg-4 col-sm-12" style="margin-top:100px">
                   <!-- <div class="thumbnail"> -->
                    <!--  <div class="flip-box">
