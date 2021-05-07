@@ -7,7 +7,7 @@
   /* margin : 0; */
   
 }
-/* input[type="search"] {
+input[type="search"] {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -16,8 +16,7 @@
   
   input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: searchfield-cancel-button;
-  } */
-  
+
 .wrapper
 {
   max-width: 450px;
@@ -275,6 +274,9 @@ background-image: linear-gradient(to bottom, #5282d4, #28667d);
   opacity: 1;
   box-shadow: 0 4px black;
 } */ 
+/* #imageposi{
+  width: 100%;
+} */
 .btn8 {
   width: 150px;
   height: 50px;

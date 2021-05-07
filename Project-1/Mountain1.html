@@ -34,7 +34,7 @@
 <body>
 
 	<div class="conatiner">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="margin-bottom: 0;">
       <a class="navbar-brand" href="#" style="color : whitesmoke">Travel <i class="fa fa-plane"
           aria-hidden="true"></i></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -45,7 +45,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#" style="color: whitesmoke">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href=".\LandingPage.html" style="color: whitesmoke">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href=".\wishlist.html" style="color: whitesmoke;">Wishlist</a>
@@ -94,10 +94,11 @@
         <form class="form-inline my-2 my-lg-0">
           <div class="wrapper">
           <div class="search-input">
-          <input type = "search"  id="searchfunc" autocomplete="off" class="form-control mr-sm-2"  placeholder="Search"
+            <a href="" hidden></a>
+          <input type = "text"  id="searchfunc" autocomplete="off" class="form-control mr-sm-2"  placeholder="Search"
             aria-label="Search" />
-          <button id="mybtn1" class="btn btn-outline-light my-2 my-sm-0" type="submit">
-            <i class="fa fa-search" aria-hidden="true"></i>
+          <button  id="mybtn1" class="btn btn-outline-light my-2 my-sm-0" type="submit">
+            <div class="iconing"><i class="fa fa-search" aria-hidden="true"></i></div>
           </button>
           <div class="autocom-box">
             <!-- <li>manali</li>
@@ -119,12 +120,20 @@
    <section id="picms">
 <!--    	<div class="container">
  -->       <div class="input weather" >
+  <div id = " imageposi" >
+    <img src=".\Images\WeatherImage.jpg" width="100%" height="300px">
+  </div>
        	 <div class="row">
+          <!-- <div class="banner"> -->
+
+
        	 	<div class="col-sm-6">
             <input type="text" class="inputValue" placeholder="Enter a City " >
             <br><br>
             <input type="submit" name="Submit" class="button"  >
           </div>
+        <!-- </div> -->
+
        <div class="col-sm-6">
           <div class="display">
             <h1 class="name"></h1>
@@ -134,13 +143,13 @@
            </div>
       </div>
      </div>
- 
+     <!-- </div> -->
   <!--	PHOTOS-->
   <div class="Kholi">
         <h1 style="text-align:center;font-weight: bold;font-size : 30px;font-family: 'Quicksand';"><marquee behavior="alternate" direction="left" scrollamount = "12">MANALI</marquee></h1>
        
     </div>
-   <div class="row">
+   <div class="row" id="Manali">
                 <div  class="col-lg-4 col-sm-12" style="margin-top:100px">
                   <!-- <div class="thumbnail"> -->
                    <!--  <div class="flip-box">
@@ -182,15 +191,15 @@
           <div class="col-lg-3 col-sm-12">
             <div class="todolist" style="margin:40px" >
               <div id="container">
-                <h1>Expected Places To Visit <i class="fa fa-plus"></i></h1>
-                <input type="text" class="inputtodo" placeholder="Wishes To Explore More">
+                <h1 style="font-family: 'Quicksand';">Expected Places To Visit <i class="fa fa-plus"></i></h1>
+                <input style="font-family: 'Quicksand';" type="search" class="inputtodo" placeholder="Wishes To Explore More">
 
                 <ul class="myul">
-                  <li><span><i class="fa fa-trash"></i></span> Rohtang</li>
-                  <li><span><i class="fa fa-trash"></i></span> Kullu</li>
-                  <li><span><i class="fa fa-trash"></i></span> Solang-Valley-Manali</li>
-                  <li><span><i class="fa fa-trash"></i></span> Kasol</li>
-                  <li><span><i class="fa fa-trash"></i></span> Atal-Tunnel</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Rohtang</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Kullu</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Solang-Valley-Manali</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Kasol</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Atal-Tunnel</li>
                 </ul>
               </div>
 
@@ -204,7 +213,7 @@
        
     </div>
 
-   <div class="row">
+   <div class="row" id="Shimla">
 
                 <div  class="col-lg-4 col-sm-12" style="margin-top:100px">
                   <!-- <div class="thumbnail"> -->
@@ -247,15 +256,15 @@
           <div class="col-lg-3 col-sm-12">
             <div class="todolist" style="margin:40px" >
               <div id="container">
-                <h1>Expected Places To Visit <i class="fa fa-plus"></i></h1>
-                <input type="text" class="inputtodo5" placeholder="Wishes To Explore More">
+                <h1 style="font-family: 'Quicksand';">Expected Places To Visit <i class="fa fa-plus"></i></h1>
+                <input style="font-family: 'Quicksand';" type="search" class="inputtodo5" placeholder="Wishes To Explore More">
 
                 <ul class="myul5">
-                  <li><span><i class="fa fa-trash"></i></span> The Ridge Of Shimla</li>
-                  <li><span><i class="fa fa-trash"></i></span> Kufri</li>
-                  <li><span><i class="fa fa-trash"></i></span> Jakhoo Hill</li>
-                  <li><span><i class="fa fa-trash"></i></span> Christ Chruch</li>
-                  <li><span><i class="fa fa-trash"></i></span> Shimla State Museum</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> The Ridge Of Shimla</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Kufri</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Jakhoo Hill</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Christ Chruch</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Shimla State Museum</li>
                 </ul>
               </div>
 
@@ -312,15 +321,15 @@
           <div class="col-lg-3 col-sm-12">
             <div class="todolist" style="margin:40px" >
               <div id="container">
-                <h1>Expected Places To Visit <i class="fa fa-plus"></i></h1>
-                <input type="text" class="inputtodo4" placeholder="Wishes To Explore More">
+                <h1 style="font-family: 'Quicksand';">Expected Places To Visit <i class="fa fa-plus"></i></h1>
+                <input style="font-family: 'Quicksand';" type="search" class="inputtodo4" placeholder="Wishes To Explore More">
 
                 <ul class="myul4">
-                  <li><span><i class="fa fa-trash"></i></span> Shop At Tibetan Market</li>
-                  <li><span><i class="fa fa-trash"></i></span> Sunset At Hanuman Garhi</li>
-                  <li><span><i class="fa fa-trash"></i></span> Ropeway Of Nanital</li>
-                  <li><span><i class="fa fa-trash"></i></span> Jim Corbett</li>
-                  <li><span><i class="fa fa-trash"></i></span> Kali River Rafting</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Shop At Tibetan Market</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Sunset At Hanuman Garhi</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Ropeway Of Nanital</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Jim Corbett</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Kali River Rafting</li>
                 </ul>
               </div>
 
@@ -374,15 +383,15 @@
           <div class="col-lg-3 col-sm-12">
             <div class="todolist" style="margin:40px" >
               <div id="container">
-                <h1>Expected Places To Visit <i class="fa fa-plus"></i></h1>
-                <input type="text" class="inputtodo3" placeholder="Wishes To Explore More">
+                <h1 style="font-family: 'Quicksand';">Expected Places To Visit <i class="fa fa-plus"></i></h1>
+                <input style="font-family: 'Quicksand';" type="search" class="inputtodo3" placeholder="Wishes To Explore More">
 
                 <ul class="myul3">
-                  <li><span><i class="fa fa-trash"></i></span>Tsomgo Lake</li>
-                  <li><span><i class="fa fa-trash"></i></span> Hanuman Tok</li>
-                  <li><span><i class="fa fa-trash"></i></span> Ranka Monastery</li>
-                  <li><span><i class="fa fa-trash"></i></span> Flower Exhibition Center</li>
-                  <li><span><i class="fa fa-trash"></i></span> Ganesh Tok</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span>Tsomgo Lake</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Hanuman Tok</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Ranka Monastery</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Flower Exhibition Center</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Ganesh Tok</li>
                 </ul>
               </div>
 
@@ -437,15 +446,15 @@
           <div class="col-lg-3 col-sm-12">
             <div class="todolist" style="margin:40px" >
               <div id="container">
-                <h1>Expected Places To Visit <i class="fa fa-plus"></i></h1>
-                <input type="text" class="inputtodo2" placeholder="Wishes To Explore More">
+                <h1 style="font-family: 'Quicksand';">Expected Places To Visit <i class="fa fa-plus"></i></h1>
+                <input style="font-family: 'Quicksand';" type="search" class="inputtodo2" placeholder="Wishes To Explore More">
 
                 <ul class="myul2">
-                  <li><span><i class="fa fa-trash"></i></span> Tea-Garden</li>
-                  <li><span><i class="fa fa-trash"></i></span> Pothamedu ViewPoint</li>
-                  <li><span><i class="fa fa-trash"></i></span> MattuPetty Dam</li>
-                  <li><span><i class="fa fa-trash"></i></span> Thoovanam Falls</li>
-                  <li><span><i class="fa fa-trash"></i></span> Blossom Hydel Park</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Tea-Garden</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Pothamedu ViewPoint</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> MattuPetty Dam</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Thoovanam Falls</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Blossom Hydel Park</li>
                 </ul>
               </div>
 
@@ -458,7 +467,7 @@
         <h1 style="text-align:center;font-weight: bold;font-size : 30px;font-family: 'Quicksand';"><marquee behavior="alternate" direction="left" scrollamount = "12">MOUNT-ABU</marquee></h1>
        
     </div>
-   <div class="row">
+   <div class="row" id="Mount-Abu">
                 <div  class="col-lg-4 col-sm-12" style="margin-top:100px">
                   <!-- <div class="thumbnail"> -->
                    <!--  <div class="flip-box">
@@ -500,15 +509,15 @@
           <div class="col-lg-3 col-sm-12">
             <div class="todolist" style="margin:40px" >
               <div id="container">
-                <h1>Expected Places To Visit <i class="fa fa-plus"></i></h1>
-                <input type="text" class="inputtodo1" placeholder="Wishes To Explore More">
+                <h1 style="font-family: 'Quicksand';">Expected Places To Visit <i class="fa fa-plus"></i></h1>
+                <input style="font-family: 'Quicksand';" type="search" class="inputtodo1" placeholder="Wishes To Explore More">
 
                 <ul class="myul1">
-                  <li><span><i class="fa fa-trash"></i></span> Nakki Lake</li>
-                  <li><span><i class="fa fa-trash"></i></span> Dilwara Jain Temples</li>
-                  <li><span><i class="fa fa-trash"></i></span> Guru Shikar</li>
-                  <li><span><i class="fa fa-trash"></i></span> Achalgarh Fort</li>
-                  <li><span><i class="fa fa-trash"></i></span> Peace Park</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Nakki Lake</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Dilwara Jain Temples</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Guru Shikar</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Achalgarh Fort</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Peace Park</li>
                 </ul>
               </div>
 
