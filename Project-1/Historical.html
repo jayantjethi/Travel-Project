@@ -129,9 +129,9 @@
 
 
        	 	<div class="col-sm-6">
-            <input type="text" class="inputValue" placeholder="Enter a City " >
+            <input type="text" class="inputValue" placeholder="Enter a City " id="pass" >
             <br><br>
-            <input type="submit" name="Submit" class="button"  >
+            <input type="submit" name="Submit" class="button" id="wbtn"  >
           </div>
         <!-- </div> -->
 
@@ -560,6 +560,14 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="weather.js"></script>
   <script>
+
+ // weatherButton Clicking
+ $("#pass").keyup(function(event) {
+            if (event.keyCode === 13) {
+                $("#wbtn").click();
+            }
+        });
+
     // when you click on an item, it gets crossed
     $(".myul").on("click", "li", function () {
       $(this).toggleClass("completed");
