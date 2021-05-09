@@ -105,6 +105,7 @@ let suggestions = [
     "Gir National Park",
     "Sariska Wildlife Reserve",
     "Ranthambore Ntaional Park",
+    "Molokai Forest Reserve",
     "Delhi",
     "Mumbai",
 "Kolkata",

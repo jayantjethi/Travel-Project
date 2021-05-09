@@ -16,12 +16,7 @@ input[type="search"] {
   
   input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: searchfield-cancel-button;
-<<<<<<< HEAD
-  } */
-  
-=======
   }
->>>>>>> c45c0976065fdeca13b666bab321f40992314f74
 .wrapper
 {
   max-width: 450px;
