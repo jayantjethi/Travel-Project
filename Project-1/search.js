@@ -123,6 +123,7 @@ let suggestions = [
     "Nanital",
     "Mount-Abu",
     "Gangtok",
+    "Anamudi",
     "Kullu",
     "Rohtang",
     "Solang-Valley",
