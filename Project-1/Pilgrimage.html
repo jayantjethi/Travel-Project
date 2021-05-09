@@ -20,7 +20,6 @@
     href="https://cdn.imgbin.com/13/12/21/imgbin-expedia-logo-travel-agent-travel-website-car-rental-travel-agency-yellow-airplane-icon-0NwWNk16hT0ABeKNnvbiM57nM.jpg"
     type="logo/jpg">
     <link rel="stylesheet" type="text/css" href="./assets/css/todos.css">
-    <script type="text/javascript" src="./assets/js/todos.js"></script>
     <script type="text/javascript" src="assets/js/lib/jquery-2.1.4.min.js"></script>
      <script>
     $(document).ready(function () {
@@ -31,10 +30,10 @@
     });
   </script>
 </head>
+<body>
 
-
-	<div class="conatiner">
-    <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="margin-bottom: 0; font-family: 'Quicksand';">
+	<div class="conatiner" >
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-dark"> --> <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="margin-bottom: 0; font-family: 'Quicksand';">
       <a class="navbar-brand" href="#" style="color : whitesmoke">Travel <i class="fa fa-plane"
           aria-hidden="true"></i></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -45,10 +44,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href=".\LandingPage.html" style="color: whitesmoke">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#" style="color: whitesmoke">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href=".\wishlist.html" style="color: whitesmoke;">Wishlist</a>
+            <a class="nav-link" href="#" style="color: whitesmoke;">Wishlist</a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -73,7 +72,8 @@
         </ul>
        <!--  <form class="form-inline my-2 my-lg-0">
          <div>
-          <input id="searchfunc" autocomplete="off" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="search /">
+          <input id="searchfunc" autocomplete="off" class="form-control mr-sm-2" type="search" placeholder="Search"
+            aria-label="Search" name="search /">
             <div class="dropdown">
           <div class="dropdown-content">
             <ul class="list-group" id="list"> -->
@@ -118,7 +118,7 @@
 <!--SECTION-->
    <section id="picms">
 <!--    	<div class="container">
- -->    
+ -->  
  <div class="inputweather" >
   <div id = " imageposi" >
     <img src=".\Images\WeatherImage.jpg" width="100%" height="300px">
@@ -130,7 +130,7 @@
        	 	<div class="col-sm-6">
             <input type="text" class="inputValue" placeholder="Enter a City " id="pass" >
             <br><br>
-            <input type="submit" name="Submit" class="button" id="wbtn" >
+            <input type="submit" name="Submit" class="button" id="wbtn"  >
           </div>
         <!-- </div> -->
 
@@ -145,19 +145,19 @@
            </div>
       </div>
      </div>
-     <!-- </div> -->
+ 
   <!--	PHOTOS-->
-  <div class="Kholi" id="Manali">
-        <h1 style="text-align:center;font-weight: bold;font-size : 30px;font-family: 'Quicksand';"><marquee behavior="alternate" direction="left" scrollamount = "12">MANALI</marquee></h1>
+  <div class="Kholi" id="Kedarnath">
+        <h1 style="text-align:center;font-weight: bold;font-size : 30px;font-family: 'Quicksand';"><marquee behavior="alternate" direction="left" scrollamount = "12">KEDARNATH</marquee></h1>
        
     </div>
    <div class="row" >
                 <div  class="col-lg-4 col-sm-12" style="margin-top:100px">
                   <!-- <div class="thumbnail"> -->
-                   <!--  <div class="flip-box">
+                   <!--  <divclass="flip-box">
                       <div class="flip-box-inner">
                         <div style="width: 100%;" class="flip-box-front"> -->
-                          <img style="height: relative; width:100%;" src=".\Images\manali-holiday.jpg">
+                          <img style="height: 400px; width:100%;" src=".\Images\Kedarnath-1.webp">
              
                     
                <!-- 
@@ -177,7 +177,7 @@
                    <!--  <div class="flip-box" style="margin-right: 0">
                       <div class="flip-box-inner">
                         <div style="width: 100%;" class="flip-box-front"> -->
-                          <img style="height: relative;  width:100%;" src=".\Images\Solang-Valley-Manali.jpg">
+                          <img style="height: 400px;  width:100%;" src=".\Images\Kedarnath-2.jpeg">
                         <!-- </div> -->
                     
                       <!--   <div class="flip-box-back">
@@ -194,14 +194,14 @@
             <div class="todolist" style="margin:40px" >
               <div id="container">
                 <h1 style="font-family: 'Quicksand';">Expected Places To Visit <i class="fa fa-plus"></i></h1>
-                <input style="font-family: 'Quicksand';" type="search" class="inputtodo" placeholder="Wishes To Explore More">
+                <input type="text" class="inputtodo" placeholder="Wishes To Explore More">
 
                 <ul class="myul">
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Rohtang</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Kullu</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Solang-Valley-Manali</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Kasol</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Atal-Tunnel</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Gandhi Sarovar</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Phata</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Sonprayag</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Gaurikund</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Vasuki Tal Lake</li>
                 </ul>
               </div>
 
@@ -210,8 +210,8 @@
    </div>
 
 
-<div class="Kholi"  id="Shimla">
-        <h1 style="text-align:center;font-weight: bold;font-size : 30px;font-family: 'Quicksand';"><marquee behavior="alternate" direction="left" scrollamount = "12">SHIMLA</marquee></h1>
+<div class="Kholi"  id="Vaishno Devi">
+        <h1 style="text-align:center;font-weight: bold;font-size : 30px;font-family: 'Quicksand';"><marquee behavior="alternate" direction="left" scrollamount = "12">VAISHNO DEVI</marquee></h1>
        
     </div>
 
@@ -222,7 +222,7 @@
                    <!--  <div class="flip-box">
                       <div class="flip-box-inner">
                         <div style="width: 100%;" class="flip-box-front"> -->
-                          <img style="height: relative; width:100%;" src=".\Images\shimla1.jpg">
+                          <img style="height: 400px; width:100%;" src=".\Images\Vaishnodevi1.jpeg">
              
                     
                <!-- 
@@ -242,7 +242,7 @@
                    <!--  <div class="flip-box" style="margin-right: 0">
                       <div class="flip-box-inner">
                         <div style="width: 100%;" class="flip-box-front"> -->
-                          <img style="height: relative;  width:100%;" src=".\Images\shimla2.jpg">
+                          <img style="height: 400px;  width:100%;" src=".\Images\Vaishnodevi2.jpeg">
                         <!-- </div> -->
                     
                       <!--   <div class="flip-box-back">
@@ -259,14 +259,14 @@
             <div class="todolist" style="margin:40px" >
               <div id="container">
                 <h1 style="font-family: 'Quicksand';">Expected Places To Visit <i class="fa fa-plus"></i></h1>
-                <input style="font-family: 'Quicksand';" type="search" class="inputtodo5" placeholder="Wishes To Explore More">
+                <input type="text" class="inputtodo1" placeholder="Wishes To Explore More">
 
-                <ul class="myul5">
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> The Ridge Of Shimla</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Kufri</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Jakhoo Hill</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Christ Chruch</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Shimla State Museum</li>
+                <ul class="myul1">
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Pahalgam</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Chandanwari</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Katra Town</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Srinagar</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Jammu</li>
                 </ul>
               </div>
 
@@ -277,196 +277,8 @@
 </div>
 
 
-<div class="Kholi" id="Nanital">
-        <h1 style="text-align:center;font-weight: bold;font-size : 30px;font-family: 'Quicksand';"><marquee behavior="alternate" direction="left" scrollamount = "12">NANITAL</marquee></h1>
-       
-    </div>
-   <div class="row">
-                <div  class="col-lg-4 col-sm-12" style="margin-top:100px">
-                  <!-- <div class="thumbnail"> -->
-                   <!--  <div class="flip-box">
-                      <div class="flip-box-inner">
-                        <div style="width: 100%;" class="flip-box-front"> -->
-                          <img style="height: 400px; width:100%;" src=".\Images\nanital.jpg">
-             
-                    
-               <!-- 
-                        <div class="flip-box-back">
-                          <h2>Paris</h2>
-                          <p>What an amazing city</p>
-                        </div>
-                      </div>
-                     </div>
-                     </div> -->
-                     </div>
-                   
-                  <!-- </div> -->
-               
-                <div class="col-lg-4 col-sm-12" style="margin-top:100px">
-                 <!--  <div class="thumbnail"> -->
-                   <!--  <div class="flip-box" style="margin-right: 0">
-                      <div class="flip-box-inner">
-                        <div style="width: 100%;" class="flip-box-front"> -->
-                          <img style="height: 400px;  width:100%;" src=".\Images\nanital2.jpg">
-                        <!-- </div> -->
-                    
-                      <!--   <div class="flip-box-back">
-                          <h2>Paris</h2>
-                          <p>What an amazing city</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
-                </div>
-
-                 
-          <div class="col-lg-3 col-sm-12">
-            <div class="todolist" style="margin:40px" >
-              <div id="container">
-                <h1 style="font-family: 'Quicksand';">Expected Places To Visit <i class="fa fa-plus"></i></h1>
-                <input style="font-family: 'Quicksand';" type="search" class="inputtodo4" placeholder="Wishes To Explore More">
-
-                <ul class="myul4">
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Shop At Tibetan Market</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Sunset At Hanuman Garhi</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Ropeway Of Nanital</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Jim Corbett</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Kali River Rafting</li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-   </div>
-
-<div class="Kholi" id="Gangtok">
-        <h1 style="text-align:center;font-weight: bold;font-size : 30px;font-family: 'Quicksand';"><marquee behavior="alternate" direction="left" scrollamount = "12">GANGTOK</marquee></h1>
-       
-    </div>
-   <div class="row">
-                <div  class="col-lg-4 col-sm-12" style="margin-top:100px">
-                  <!-- <div class="thumbnail"> -->
-                   <!--  <div class="flip-box">
-                      <div class="flip-box-inner">
-                        <div style="width: 100%;" class="flip-box-front"> -->
-                          <img style="height: 400px; width:100%;" src=".\Images\gangtok1.jpg">
-             
-                    
-               <!-- 
-                        <div class="flip-box-back">
-                          <h2>Paris</h2>
-                          <p>What an amazing city</p>
-                        </div>
-                      </div>
-                     </div>
-                     </div> -->
-                     </div>
-                   
-                  <!-- </div> -->
-               
-                <div class="col-lg-4 col-sm-12" style="margin-top:100px">
-                 <!--  <div class="thumbnail"> -->
-                   <!--  <div class="flip-box" style="margin-right: 0">
-                      <div class="flip-box-inner">
-                        <div style="width: 100%;" class="flip-box-front"> -->
-                          <img style="height: 400px;  width:100%;" src=".\Images\gangtok2.jpg">
-                        <!-- </div> -->
-                    
-                      <!--   <div class="flip-box-back">
-                          <h2>Paris</h2>
-                          <p>What an amazing city</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
-                </div>
-
-                 
-          <div class="col-lg-3 col-sm-12">
-            <div class="todolist" style="margin:40px" >
-              <div id="container">
-                <h1 style="font-family: 'Quicksand';">Expected Places To Visit <i class="fa fa-plus"></i></h1>
-                <input style="font-family: 'Quicksand';" type="search" class="inputtodo3" placeholder="Wishes To Explore More">
-
-                <ul class="myul3">
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span>Tsomgo Lake</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Hanuman Tok</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Ranka Monastery</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Flower Exhibition Center</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Ganesh Tok</li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-   </div>
-
-<div class="Kholi" id="Anamudi">
-        <h1 style="text-align:center;font-weight: bold;font-size : 30px;font-family: 'Quicksand';"><marquee behavior="alternate" direction="left" scrollamount = "12">Anamudi Peak, Kerala
-</marquee></h1>
-       
-    </div>
-   <div class="row">
-                <div  class="col-lg-4 col-sm-12" style="margin-top:100px">
-                  <!-- <div class="thumbnail"> -->
-                   <!--  <div class="flip-box">
-                      <div class="flip-box-inner">
-                        <div style="width: 100%;" class="flip-box-front"> -->
-                          <img style="height: 400px; width:100%;" src=".\Images\anamudi1.jpg">
-             
-                    
-               <!-- 
-                        <div class="flip-box-back">
-                          <h2>Paris</h2>
-                          <p>What an amazing city</p>
-                        </div>
-                      </div>
-                     </div>
-                     </div> -->
-                     </div>
-                   
-                  <!-- </div> -->
-               
-                <div class="col-lg-4 col-sm-12" style="margin-top:100px">
-                 <!--  <div class="thumbnail"> -->
-                   <!--  <div class="flip-box" style="margin-right: 0">
-                      <div class="flip-box-inner">
-                        <div style="width: 100%;" class="flip-box-front"> -->
-                          <img style="height: 400px;  width:100%;" src=".\Images\anamudi2.jpg">
-                        <!-- </div> -->
-                    
-                      <!--   <div class="flip-box-back">
-                          <h2>Paris</h2>
-                          <p>What an amazing city</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div> -->
-                </div>
-
-                 
-          <div class="col-lg-3 col-sm-12">
-            <div class="todolist" style="margin:40px" >
-              <div id="container">
-                <h1 style="font-family: 'Quicksand';">Expected Places To Visit <i class="fa fa-plus"></i></h1>
-                <input style="font-family: 'Quicksand';" type="search" class="inputtodo2" placeholder="Wishes To Explore More">
-
-                <ul class="myul2">
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Tea-Garden</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Pothamedu ViewPoint</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> MattuPetty Dam</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Thoovanam Falls</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Blossom Hydel Park</li>
-                </ul>
-              </div>
-
-            </div>
-          </div>
-   </div>
-
-
-<div class="Kholi" id="Mount-Abu">
-        <h1 style="text-align:center;font-weight: bold;font-size : 30px;font-family: 'Quicksand';"><marquee behavior="alternate" direction="left" scrollamount = "12">MOUNT-ABU</marquee></h1>
+<div class="Kholi" id="Badrinath">
+        <h1 style="text-align:center;font-weight: bold;font-size : 30px;font-family: 'Quicksand';"><marquee behavior="alternate" direction="left" scrollamount = "12">BADRINATH</marquee></h1>
        
     </div>
    <div class="row" >
@@ -475,7 +287,7 @@
                    <!--  <div class="flip-box">
                       <div class="flip-box-inner">
                         <div style="width: 100%;" class="flip-box-front"> -->
-                          <img style="height: 400px; width:100%;" src=".\Images\mountabu2.jpg">
+                          <img style="height: 400px; width:100%;" src=".\Images\Badrinath1.jpeg">
              
                     
                <!-- 
@@ -495,7 +307,7 @@
                    <!--  <div class="flip-box" style="margin-right: 0">
                       <div class="flip-box-inner">
                         <div style="width: 100%;" class="flip-box-front"> -->
-                          <img style="height: 400px;  width:100%;" src=".\Images\mountabu1.jpg">
+                          <img style="height: 400px;  width:100%;" src=".\Images\Badrinath2.jpeg">
                         <!-- </div> -->
                     
                       <!--   <div class="flip-box-back">
@@ -512,20 +324,270 @@
             <div class="todolist" style="margin:40px" >
               <div id="container">
                 <h1 style="font-family: 'Quicksand';">Expected Places To Visit <i class="fa fa-plus"></i></h1>
-                <input style="font-family: 'Quicksand';" type="search" class="inputtodo1" placeholder="Wishes To Explore More">
+                <input type="text" class="inputtodo2" placeholder="Wishes To Explore More">
 
-                <ul class="myul1">
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Nakki Lake</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Dilwara Jain Temples</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Guru Shikar</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Achalgarh Fort</li>
-                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Peace Park</li>
+                <ul class="myul2">
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Vasudhara Falls</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Bheem Pul</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Tapt Kund</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Vyas Gufa</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Alka Puri</li>
                 </ul>
               </div>
 
             </div>
           </div>
    </div>
+
+<div class="Kholi" id="Somnath">
+        <h1 style="text-align:center;font-weight: bold;font-size : 30px;font-family: 'Quicksand';"><marquee behavior="alternate" direction="left" scrollamount = "12">SOMNATH</marquee></h1>
+       
+    </div>
+   <div class="row" >
+                <div  class="col-lg-4 col-sm-12" style="margin-top:100px">
+                  <!-- <div class="thumbnail"> -->
+                   <!--  <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div style="width: 100%;" class="flip-box-front"> -->
+                          <img style="height: 400px; width:100%;" src=".\Images\Somnath1.png">
+             
+                    
+               <!-- 
+                        <div class="flip-box-back">
+                          <h2>Paris</h2>
+                          <p>What an amazing city</p>
+                        </div>
+                      </div>
+                     </div>
+                     </div> -->
+                     </div>
+                   
+                  <!-- </div> -->
+               
+                <div class="col-lg-4 col-sm-12" style="margin-top:100px">
+                 <!--  <div class="thumbnail"> -->
+                   <!--  <div class="flip-box" style="margin-right: 0">
+                      <div class="flip-box-inner">
+                        <div style="width: 100%;" class="flip-box-front"> -->
+                          <img style="height: 400px;  width:100%;" src=".\Images\Somnath2.jpeg">
+                        <!-- </div> -->
+                    
+                      <!--   <div class="flip-box-back">
+                          <h2>Paris</h2>
+                          <p>What an amazing city</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+
+                 
+          <div class="col-lg-3 col-sm-12">
+            <div class="todolist" style="margin:40px" >
+              <div id="container">
+                <h1 style="font-family: 'Quicksand';">Expected Places To Visit <i class="fa fa-plus"></i></h1>
+                <input type="text" class="inputtodo3" placeholder="Wishes To Explore More">
+
+                <ul class="myul3">
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Bhalka Teerth</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Triveni Sangam</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Somnath Beach</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Prabhas Patan Museum</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Kamnath Temple</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+   </div>
+
+<div class="Kholi" id="Tirupati Balaji">
+        <h1 style="text-align:center;font-weight: bold;font-size : 30px;font-family: 'Quicksand';"><marquee behavior="alternate" direction="left" scrollamount = "12">TIRUPATI BALAJI
+</marquee></h1>
+       
+    </div>
+   <div class="row" >
+                <div  class="col-lg-4 col-sm-12" style="margin-top:100px">
+                  <!-- <div class="thumbnail"> -->
+                   <!--  <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div style="width: 100%;" class="flip-box-front"> -->
+                          <img style="height: 400px; width:100%;" src=".\Images\Balaji1.jpeg">
+             
+                    
+               <!-- 
+                        <div class="flip-box-back">
+                          <h2>Paris</h2>
+                          <p>hat an amazing city</p>
+                        </div>
+                      </div>
+                     </div>
+                     </div> -->
+                     </div>
+                   
+                  <!-- </div> -->
+               
+                <div class="col-lg-4 col-sm-12" style="margin-top:100px">
+                 <!--  <div class="thumbnail"> -->
+                   <!--  <div class="flip-box" style="margin-right: 0">
+                      <div class="flip-box-inner">
+                        <div style="width: 100%;" class="flip-box-front"> -->
+                          <img style="height: 400px;  width:100%;" src=".\Images\Balaji2.jpeg">
+                        <!-- </div> -->
+                    
+                      <!--   <div class="flip-box-back">
+                          <h2>Paris</h2>
+                          <p>What an amazing city</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+
+                 
+          <div class="col-lg-3 col-sm-12">
+            <div class="todolist" style="margin:40px" >
+              <div id="container">
+                <h1 style="font-family: 'Quicksand';">Expected Places To Visit <i class="fa fa-plus"></i></h1>
+                <input type="text" class="inputtodo4" placeholder="Wishes To Explore More">
+
+                <ul class="myul4">
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Sri Padmavathi Ammavari Temple</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Srikalahasti Temple</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Sri Venkateswara National Park</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span>  Talakona Waterfalls</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Chandragiri</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+   </div>
+
+
+<div class="Kholi" id="Amritsar">
+        <h1 style="text-align:center;font-weight: bold;font-size : 30px;font-family: 'Quicksand';"><marquee behavior="alternate" direction="left" scrollamount = "12">AMRITSAR</marquee></h1>
+       
+    </div>
+   <div class="row" >
+                <div  class="col-lg-4 col-sm-12" style="margin-top:100px">
+                  <!-- <div class="thumbnail"> -->
+                   <!--  <div class="flip-box">
+                      <div class="flip-box-inner">
+                        <div style="width: 100%;" class="flip-box-front"> -->
+                          <img style="height: 400px; width:100%;" src=".\Images\Amritsar1.jpeg">
+             
+                    
+               <!-- 
+                        <div class="flip-box-back">
+                          <h2>Paris</h2>
+                          <p>What an amazing city</p>
+                        </div>
+                      </div>
+                     </div>
+                     </div> -->
+                     </div>
+                   
+                  <!-- </div> -->
+               
+                <div class="col-lg-4 col-sm-12" style="margin-top:100px">
+                 <!--  <div class="thumbnail"> -->
+                   <!--  <div class="flip-box" style="margin-right: 0">
+                      <div class="flip-box-inner">
+                        <div style="width: 100%;" class="flip-box-front"> -->
+                          <img style="height: 400px;  width:100%;" src=".\Images\Amritsar2.jpeg">
+                        <!-- </div> -->
+                    
+                      <!--   <div class="flip-box-back">
+                          <h2>Paris</h2>
+                          <p>What an amazing city</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+
+                 
+          <div class="col-lg-3 col-sm-12">
+            <div class="todolist" style="margin:40px" >
+              <div id="container">
+                <h1 style="font-family: 'Quicksand';">Expected Places To Visit <i class="fa fa-plus"></i></h1>
+                <input type="text" class="inputtodo5" placeholder="Wishes To Explore More">
+
+                <ul class="myul5">
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Chandigarh</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Ludhiana</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Palampur</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Jalandhar</li>
+                  <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Wagah Border</li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+   </div>
+   <div class="Kholi" id="Ajmer Sharif">
+    <h1 style="text-align:center;font-weight: bold;font-size : 30px;font-family: 'Quicksand';"><marquee behavior="alternate" direction="left" scrollamount = "12">AJMER-SHARIF</marquee></h1>
+   
+</div>
+<div class="row" >
+            <div  class="col-lg-4 col-sm-12" style="margin-top:100px">
+              <!-- <div class="thumbnail"> -->
+               <!--  <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div style="width: 100%;" class="flip-box-front"> -->
+                      <img style="height: 400px; width:100%;" src=".\Images\Ajmer1.jpeg">
+         
+                
+           <!-- 
+                    <div class="flip-box-back">
+                      <h2>Paris</h2>
+                      <p>What an amazing city</p>
+                    </div>
+                  </div>
+                 </div>
+                 </div> -->
+                 </div>
+               
+              <!-- </div> -->
+           
+            <div class="col-lg-4 col-sm-12" style="margin-top:100px">
+             <!--  <div class="thumbnail"> -->
+               <!--  <div class="flip-box" style="margin-right: 0">
+                  <div class="flip-box-inner">
+                    <div style="width: 100%;" class="flip-box-front"> -->
+                      <img style="height: 400px;  width:100%;" src=".\Images\Ajmer2.jpeg">
+                    <!-- </div> -->
+                
+                  <!--   <div class="flip-box-back">
+                      <h2>Paris</h2>
+                      <p>What an amazing city</p>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+
+             
+      <div class="col-lg-3 col-sm-12">
+        <div class="todolist" style="margin:40px" >
+          <div id="container">
+            <h1 style="font-family: 'Quicksand';">Expected Places To Visit <i class="fa fa-plus"></i></h1>
+            <input type="text" class="inputtodo6" placeholder="Wishes To Explore More">
+
+            <ul class="myul6">
+              <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Akbar's Palace ans Museum</li>
+              <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Foy Sagar Lake</li>
+              <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Buland Darwaza</li>
+              <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Birla City Water Park</li>
+              <li style="font-family: 'Quicksand';"><span><i class="fa fa-trash"></i></span> Pushkar</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+</div>
+
 
 
 
@@ -563,7 +625,7 @@
           <div class="ftco-footer-widget mb-4 ml-md-4" style="padding-left:100px ">
             <h2 class="ftco-heading-2">Categories</h2>
             <ul class="list-unstyled">
-              <li><a href="Mountain1.html"><span class="icon-long-arrow-right mr-2"></span>Mountains</a></li>
+              <li><a href="Mountain1.html"><span class="icon-long-arrow-right mr-2"></span><form action=".\Mountain1.html">Mountains</form></a></li>
               <li><a href="Beaches.html"><span class="icon-long-arrow-right mr-2"></span>Beach
                 </a></li>
               <li><a href="Historical.html"><span class="icon-long-arrow-right mr-2"></span>Historic Places</a></li>
@@ -621,8 +683,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <script src="weather.js"></script>
   <script>
-
-  // weatherButton Clicking
+    // weatherButton Clicking
 $("#pass").keyup(function(event) {
             if (event.keyCode === 13) {
                 $("#wbtn").click();
@@ -778,7 +839,29 @@ $("#pass").keyup(function(event) {
       }
     });
 
-    
+    $(".myul6").on("click", "li", function () {
+      $(this).toggleClass("completed");
+    });
+
+    // when you click on dustbin, item gets removed from the todo list
+    $(".myul6").on("click", "span", function (event) {
+      $(this).parent().fadeOut(500, function () {
+        $(this).remove();
+      });
+
+
+
+    });
+
+    // For entering a new item in to-do list
+    $(".inputtodo6").keypress(function (event) {
+      if (event.which === 13) {
+        var todo = $(this).val();
+        $(this).val("");
+        $(".myul6").append("<li><span>x </span>" + todo + "</li>");
+      }
+    });
+
   </script>
   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 

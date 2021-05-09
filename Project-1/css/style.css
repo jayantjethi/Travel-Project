@@ -206,12 +206,31 @@ border: 0;
   color: maroon;
   
 }
+.inputweather .button{
+  width: 70px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: rgb(122, 32, 32);
+  background: #5282d4;
+background-image: -webkit-linear-gradient(top, #5282d4, #28667d);
+background-image: -moz-linear-gradient(top, #5282d4, #28667d);
+background-image: -ms-linear-gradient(top, #5282d4, #28667d);
+background-image: -o-linear-gradient(top, #5282d4, #28667d);
+background-image: linear-gradient(to bottom, #5282d4, #28667d);
+  cursor: pointer;
+  position: absolute;
+  z-index: 0;
+  border-radius: 10px;
+  top: -20px;
+  left:-30px;
+}
 /* .btn8{
   width: 150px;
   height: 50px;
   border: none;
   outline: none;
-  color: rgb(255, 255, 255);
+  color: rg(255, 255, 255);
   background: #7bda7838;
  
   /* #background: linear-gradient(45deg, #ff0000, #ff7300, fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); */
@@ -258,6 +277,74 @@ background-image: linear-gradient(to bottom, #5282d4, #28667d);
 /* #imageposi{
   width: 100%;
 } */
+.inputweather .inputValue{
+  /* width: 100%; */
+  /* border: px solid #00B4CC; */
+  /* border-right: none; */
+  background: #fff;
+  outline: 0;
+  border: none;
+  padding:20px;
+  height: 20px;
+  border-radius: 5px 5px 5px 5px;
+  /* outline: none; */
+  top: -200px;
+  left: 575px;
+/* size: 1000px; */
+  position: relative;
+  color: black;
+  box-shadow: 2px 5px black;
+}
+input[type=text]:focus {
+  width: 60%;
+  border-radius: 5px 5px 5px 5px;
+  text-align: center;
+
+}
+::placeholder {
+  color :black;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color:black;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+ color:black;
+}
+.inputweather .button{
+  width: 100px;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #5282d4;
+background-image: -webkit-linear-gradient(top, #5282d4, #28667d);
+background-image: -moz-linear-gradient(top, #5282d4, #28667d);
+background-image: -ms-linear-gradient(top, #5282d4, #28667d);
+background-image: -o-linear-gradient(top, #5282d4, #28667d);
+background-image: linear-gradient(to bottom, #5282d4, #28667d);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  top: -225px;
+  left: 717px; 
+  }
+  #weatherbtn{
+    position:relative;
+    left: -260px;
+    top: -100px;
+    color:blanchedalmond;
+    font-weight: 800;
+    text-transform: uppercase;
+    /* background-color: black; */
+    width: 50%;
+    /* margin-right: -20px; */
+    font-size: 25px;
+    text-shadow: 2px 2px #FF0000;
+    line-height: 25px;
+  }
 .btn8 {
   width: 150px;
   height: 50px;
@@ -346,7 +433,7 @@ background-image: linear-gradient(to bottom, #5282d4, #28667d);
   background-image: -ms-linear-gradient(top, #5282d4, #28667d);
   background-image: -o-linear-gradient(top, #5282d4, #28667d);
   background-image: linear-gradient(to bottom, #5282d4, #28667d);
-    cursor: ;
+    cursor: pointer;
     position: relative;
     z-index: 0;
     border-radius: 20px;
@@ -377,7 +464,7 @@ background-image: linear-gradient(to bottom, #5282d4, #28667d);
      bottom: 5px;
 }
 .dropdown-menu a:hover{
-  background-color: #000000;
+  background-color: blanchedalmond;
 }
 .Kholi
 {
