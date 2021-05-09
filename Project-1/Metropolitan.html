@@ -118,21 +118,29 @@
 <!--SECTION-->
    <section id="picms">
 <!--    	<div class="container">
- -->       <div class="inputweather" >
+ -->      
+ <div class="inputweather" >
   <div id = " imageposi" >
     <img src=".\Images\WeatherImage.jpg" width="100%" height="300px">
   </div>
        	 <div class="row">
+          <!-- <div class="banner"> -->
+
+
        	 	<div class="col-sm-6">
             <input type="text" class="inputValue" placeholder="Enter a City " >
             <br><br>
             <input type="submit" name="Submit" class="button"  >
           </div>
+        <!-- </div> -->
+
        <div class="col-sm-6">
-          <div class="display">
+          <div class="display" id="weatherbtn">
             <h1 class="name"></h1>
-            <p class="desc"></p>
-            <p class="temp"></p>
+            <!-- Weather Type -->
+            <marquee behavior="alternate" direction="left" scrollamount = "7"><p class="desc" >Weather</p></marquee> 
+            <!-- <span>Temperature(in K) </span> -->
+            <marquee behavior="alternate" direction="right" scrollamount = "7"><p class="temp">Temperature(in K)</p></marquee>
           </div>
            </div>
       </div>
