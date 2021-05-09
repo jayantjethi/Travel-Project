@@ -16,7 +16,12 @@ input[type="search"] {
   
   input[type="search"]::-webkit-search-cancel-button {
   -webkit-appearance: searchfield-cancel-button;
-
+<<<<<<< HEAD
+  } */
+  
+=======
+  }
+>>>>>>> c45c0976065fdeca13b666bab321f40992314f74
 .wrapper
 {
   max-width: 450px;
@@ -277,6 +282,41 @@ background-image: linear-gradient(to bottom, #5282d4, #28667d);
 /* #imageposi{
   width: 100%;
 } */
+.inputweather .inputValue{
+  /* width: 100%; */
+  /* border: px solid #00B4CC; */
+  /* border-right: none; */
+  background: #fff;
+  outline: 0;
+  border: none;
+  padding:20px;
+  height: 20px;
+  /* border-radius: 5px 0 0 5px; */
+  /* outline: none; */
+  top: -155px;
+  left: 575px;
+/* size: 1000px; */
+  position: relative;
+}
+.inputweather .button{
+  width: 150px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: #fff;
+  background: #5282d4;
+background-image: -webkit-linear-gradient(top, #5282d4, #28667d);
+background-image: -moz-linear-gradient(top, #5282d4, #28667d);
+background-image: -ms-linear-gradient(top, #5282d4, #28667d);
+background-image: -o-linear-gradient(top, #5282d4, #28667d);
+background-image: linear-gradient(to bottom, #5282d4, #28667d);
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  top: -150px;
+  left: 580px; 
+}
 .btn8 {
   width: 150px;
   height: 50px;
