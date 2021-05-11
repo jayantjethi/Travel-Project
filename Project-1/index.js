@@ -1,6 +1,6 @@
 function updateMap() {
   // console.log("Updating Map");
-  fetch("/data.json")
+  fetch("https://coronavirus.app/get-checkpoints")
     .then(response => response.json())
     .then(rsp => {
 
