@@ -1,6 +1,6 @@
 function updateMap() {
   // console.log("Updating Map");
-  fetch("https://coronavirus.app/get-checkpoints")
+  fetch("https://api.apify.com/v2/key-value-stores/toDWvRj1JpTXiM8FF/records/LATEST?disableRedirect=true")
     .then(response => response.json())
     .then(rsp => {
 
@@ -26,7 +26,7 @@ function updateMap() {
         })
           .setLngLat([longitude, latitude])
           .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-          .setHTML('<h3>' + element.name + '</h3><br><h3>'+ '<h3>Infected</h3>'+ element.infected + '</h3><br>'+'<h3>' +'<h3>Vaccinated</h3>'+ element.vaccinated + '</h3><br>'+'<h3>Recovered</h3>'+ element.recovered + '</h3><br>' ))
+          .setHTML('<h3>' + element.regionData.region + '</h3><br><h3>'+ '<h3>Infected</h3>'+ element.regionData.activeCases + '</h3><br>'+'<h3>' +'<h3>Recovered</h3>'+ element.regionData.recovered + '</h3><br>' ))
           .addTo(map);
       });
     })
