@@ -1,6 +1,6 @@
 function updateMap() {
   // console.log("Updating Map");
-  fetch("https://api.apify.com/v2/key-value-stores/toDWvRj1JpTXiM8FF/records/LATEST?disableRedirect=true")
+  fetch("https://corona.lmao.ninja/v2/countries")
     .then(response => response.json())
     .then(rsp => {
 
@@ -8,8 +8,8 @@ function updateMap() {
 
       console.log(rsp.data)
       rsp.data.forEach(element => {
-        latitude = element.latitude;
-        longitude = element.longitude;
+        latitude = element.countryInfo.lat;
+        longitude = element.countryInfo.long;
         
         cases = element.infected;
         if(cases > 20000)
@@ -26,7 +26,7 @@ function updateMap() {
         })
           .setLngLat([longitude, latitude])
           .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-          .setHTML('<h3>' + element.regionData.region + '</h3><br><h3>'+ '<h3>Infected</h3>'+ element.regionData.activeCases + '</h3><br>'+'<h3>' +'<h3>Recovered</h3>'+ element.regionData.recovered + '</h3><br>' ))
+          .setHTML('<h3>' + element.country + '</h3><br><h3>'+ '<h3>Infected</h3>'+ element.active + '</h3><br>'+'<h3>' +'<h3>Recovered</h3>'+ element.recovered + '</h3><br>' ))
           .addTo(map);
       });
     })
