@@ -1,6 +1,6 @@
 function updateMap() {
   // console.log("Updating Map");
-  fetch("https://corona.lmao.ninja/v2/countries")
+  fetch("https://jayantjethi.github.io/data-json/data.json")
     .then(response => response.json())
     .then(rsp => {
 
@@ -8,8 +8,8 @@ function updateMap() {
 
       console.log(rsp.data)
       rsp.data.forEach(element => {
-        latitude = element.countryInfo.lat;
-        longitude = element.countryInfo.long;
+        latitude = element.latitude;
+        longitude = element.longitude;
         
         cases = element.infected;
         if(cases > 20000)
@@ -26,7 +26,7 @@ function updateMap() {
         })
           .setLngLat([longitude, latitude])
           .setPopup(new mapboxgl.Popup({ offset: 25 }) // add popups
-          .setHTML('<h3>' + element.country + '</h3><br><h3>'+ '<h3>Infected</h3>'+ element.active + '</h3><br>'+'<h3>' +'<h3>Recovered</h3>'+ element.recovered + '</h3><br>' ))
+          .setHTML('<h3>' + element.name + '</h3><br><h3>'+ '<h3>Infected</h3>'+ element.infected + '</h3><br>'+'<h3>' +'<h3>Vaccinated</h3>'+ element.vaccinated + '</h3><br>'+'<h3>Recovered</h3>'+ element.recovered + '</h3><br>' ))
           .addTo(map);
       });
     })
