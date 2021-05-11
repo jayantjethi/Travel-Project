@@ -16,7 +16,7 @@
   	var descValue= res.data.weather[0].description;
   	
      name.innerHTML= nameValue;
-    temp.innerHTML= tempValue;
+    temp.innerHTML= Math.round(tempValue-273)+"(in C)";
     desc.innerHTML= descValue;
      
      // console.log(x)
